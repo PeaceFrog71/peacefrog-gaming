@@ -2,19 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/x-icon" href="/peacefrog-favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PeaceFrog Gaming - Coming Soon</title>
-    <meta name="description" content="PeaceFrog Gaming - Level Up Your Experience. Gaming tools and resources coming soon." />
+    <title>PeaceFrog Gaming - Smart Tools for Gamers</title>
+    <meta name="description" content="PeaceFrog Gaming - Level Up Your Experience. Smart tools and games for people who love to play." />
+
+    <!-- Open Graph / Social Media Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://peacefroggaming.com/" />
+    <meta property="og:title" content="PeaceFrog Gaming" />
+    <meta property="og:description" content="Smart tools and games for people who love to play." />
+    <meta property="og:site_name" content="PeaceFrog Gaming" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Electrolize&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-BpliPSis.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-vb46iELC.css">
+    <script type="module" crossorigin src="/assets/index-CtPDhLDl.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-COwD9V6F.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
+
+    <!-- Ko-fi Widget -->
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+      kofiWidgetOverlay.draw('peacefroggaming', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support',
+        'floating-chat.donateButton.background-color': '#00ff88',
+        'floating-chat.donateButton.text-color': '#0a0e27'
+      });
+    </script>
+    <style>
+      /* Move Ko-fi's widget to lower left and stretch it */
+      .floatingchat-container-wrap,
+      .floatingchat-container-wrap-mobi,
+      [class*="floatingchat-container-wrap"] {
+        bottom: 10px !important;
+        top: auto !important;
+        left: 10px !important;
+        right: auto !important;
+        transform: scaleX(1.65) !important;
+        transform-origin: left center !important;
+      }
+      /* Hide Ko-fi's button visually but keep it clickable */
+      .floatingchat-container-wrap,
+      .floatingchat-container-wrap-mobi,
+      [class*="floatingchat-container-wrap"],
+      .floatingchat-container-wrap > *,
+      .floatingchat-container-wrap-mobi > * {
+        background: transparent !important;
+        background-color: transparent !important;
+      }
+      .floatingchat-container-wrap > *:first-child,
+      .floatingchat-container-wrap button,
+      .floatingchat-container-wrap [class*="btn"],
+      .floatingchat-container-wrap-mobi > *:first-child,
+      .floatingchat-container-wrap-mobi button {
+        opacity: 0 !important;
+      }
+      /* Our styled overlay button in lower left */
+      .kofi-overlay-btn {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.6rem 1.2rem;
+        background: linear-gradient(135deg, #0d1229 0%, #1a1f3c 100%);
+        color: #00d9ff;
+        font-family: 'Orbitron', 'Electrolize', sans-serif;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        border: 2px solid #00ff88;
+        border-radius: 50px;
+        box-shadow:
+          0 4px 12px rgba(0, 0, 0, 0.4),
+          0 0 10px rgba(0, 255, 136, 0.2);
+        z-index: 2147483647 !important;
+        pointer-events: none;
+      }
+      .kofi-overlay-btn .kofi-icon {
+        font-size: 1.2rem;
+        filter: drop-shadow(0 0 4px rgba(0, 255, 136, 0.5));
+      }
+      .kofi-overlay-btn span {
+        line-height: 1.3;
+        text-align: center;
+      }
+    </style>
+    <!-- Our styled button overlay - clicks pass through to Ko-fi underneath -->
+    <div class="kofi-overlay-btn">
+      <span class="kofi-icon">☕</span>
+      <span>Support Us<br />on Ko-fi</span>
+    </div>
   </body>
 </html>
