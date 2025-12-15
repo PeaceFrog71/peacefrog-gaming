@@ -50,6 +50,9 @@ function App() {
       </div>
 
       <footer className="footer">
+        <p className="contact">
+          <a href="mailto:info@peacefroggaming.com">info@peacefroggaming.com</a>
+        </p>
         <p>&copy; {new Date().getFullYear()} PeaceFrog Gaming. All rights reserved.</p>
       </footer>
     </div>
