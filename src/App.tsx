@@ -23,6 +23,12 @@ function App() {
                 <p className="app-category">Star Citizen</p>
                 <p className="app-description">Mining calculator to optimize your loadout and maximize your yields</p>
               </a>
+              <a href="https://bandhopper.peacefroggaming.com" className="app-card featured">
+                <div className="app-card-badge">Live</div>
+                <h3>Band Hopper</h3>
+                <p className="app-category">Star Citizen</p>
+                <p className="app-description">Simplify a trip to the Aaron Halo Band of your choice.</p>
+              </a>
             </div>
           </section>
 
@@ -34,7 +40,6 @@ function App() {
                 <h4>Star Citizen</h4>
                 <ul className="teaser-list">
                   <li>Group Mining Manager</li>
-                  <li>Aaron Belt Navigator</li>
                 </ul>
               </div>
 
