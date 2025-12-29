@@ -27,7 +27,7 @@ function App() {
                 <div className="app-card-badge">Live</div>
                 <h3>Band Hopper</h3>
                 <p className="app-category">Star Citizen</p>
-                <p className="app-description">Aaron Halo Mining Navigator: simplify your trip to the Halo Band of your choice.</p>
+                <p className="app-description">Band Hopper: simplify your trip to the Aaron Halo band of your choice.</p>
               </a>
             </div>
           </section>
