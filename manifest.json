@@ -1,0 +1,16 @@
+{
+  "name": "PeaceFrog Gaming",
+  "short_name": "PeaceFrog",
+  "description": "Smart tools and games for people who love to play",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e27",
+  "theme_color": "#0a0e27",
+  "icons": [
+    {
+      "src": "/peacefrog-favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
